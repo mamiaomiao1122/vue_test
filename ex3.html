@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例</title>
+</head>
+<style>
+
+</style>
+<body>
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+
+<div id="app">
+      <!-- for循坏 -->
+      <div v-for="(value,key,index) in object">
+        {{index}}. {{key}} : {{value}}
+      </div>
+</div>
+	
+<script>
+new Vue({
+	el: '#app',
+  data:{
+  	object:{
+      name:"mmm",
+      url:"www.baidu.com",
+      desc:"asdf"
+    }
+  }
+});
+</script>
+</body>
+</html>
